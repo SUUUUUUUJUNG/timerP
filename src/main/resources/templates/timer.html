@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>타이머</title>
+    <link rel="stylesheet" href="/css/timer.css">
+    <script src="/js/timer.js" defer></script>
+</head>
+<body>
+<h1>타이머</h1>
+<div class="timer-display">
+    <input type="number" id="hours" class="time-input" value="00" readonly> 시간
+    <input type="number" id="minutes" class="time-input" value="00" readonly> 분
+    <input type="number" id="seconds" class="time-input" value="00" readonly> 초
+</div>
+<div>
+    <button class="control-button start-button" onclick="startTimer()">START</button>
+    <button class="control-button reset-button" onclick="resetTimer()">RESET</button>
+</div>
+<div class="button-row">
+    <button onclick="addTime(10)">+ 10초</button>
+    <button onclick="addTime(60)">+ 1분</button>
+    <button onclick="addTime(300)">+ 5분</button>
+    <button onclick="addTime(600)">+ 10분</button>
+    <button onclick="addTime(1800)">+ 30분</button>
+    <button onclick="addTime(3600)">+ 1시간</button>
+</div>
+</body>
+</html>
